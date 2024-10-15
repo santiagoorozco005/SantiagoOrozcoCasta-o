@@ -1,11 +1,9 @@
+import { Header } from "../Layouts/Header";
+
+
 export const Home = () => {
+    return (
+        <Header />
+    );
+};
 
-    return(
-        <div>
-            <p>Hola mundo</p>
-        </div>
-    )
-        
-    
-
-}
