@@ -1,5 +1,4 @@
-
-import AboutMe from "../Layouts/Abouy me/About-me";
+import { AboutMe } from "../Layouts/Abouy me/About-me";
 import { Header } from "../Layouts/Header";
 
 

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Computer, Atom, Smartphone } from "lucide-react";
-import "./AboutMe.css";
+import "./About-me.css"
 
 export const AboutMe = () => {
   useEffect(() => {
