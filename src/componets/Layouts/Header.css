@@ -41,8 +41,57 @@ header > .about-me{
     font-size: 1.5rem;
 }
 
-header > .botton{
+header .botton {
+    position: relative;
     padding: 1rem;
-    border: 2px solid red;
     border-radius: 1rem;
-}
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    z-index: 1;
+  }
+  
+  /* Creamos el efecto del borde usando un pseudo-elemento */
+  header .botton::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: 1rem;
+    background: linear-gradient(
+      90deg, 
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    background-size: 400%;
+    animation: borderAnimation 20s linear infinite;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  /* Opcional: Agregar efecto hover */
+  header .botton:hover::before {
+    animation: borderAnimation 3s linear infinite;
+  }
+  
+  /* Para que el ícono tenga buen contraste */
+  header .botton i {
+    color: #fff; /* o el color que prefieras */
+  }
