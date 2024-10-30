@@ -1,67 +1,72 @@
 .expertise {
-    background-color: #1a1a1a;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 0;
-    margin-left: 0;
-  }
-  
-  .expertise h1 {
-    text-align: center;
-    color: white;
-    font-size: 3.5rem;
-    margin-bottom: 4rem;
-    font-weight: bold;
-  }
-  
-  .expertise-grid {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  
-  .expertise-card {
-    background-color: #252525;
-    padding: 2rem;
-    border-radius: 10px;
-    color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .expertise-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-icon {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #4a9eff;
-  }
-  
-  .expertise-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-  }
-  
-  .expertise-card h3 {
-    color: #888;
-    font-weight: normal;
-    line-height: 1.6;
-    font-size: 1rem;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .expertise h1 {
-      font-size: 2.5rem;
-    }
-  
+  background-color: #1a1a1a;
+  padding: 4rem 2rem;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.expertise h1 {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.expertise-card {
+  background-color: #252525;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expertise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4a9eff;
+}
+
+.expertise-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.expertise-card h3 {
+  color: #888;
+  font-weight: normal;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .expertise h1 {
+    font-size: 2.5rem;
   }
+
+  .expertise {
+    padding: 3rem 1rem;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+}
