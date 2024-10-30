@@ -137,3 +137,10 @@ header .botton i {
 .header-scrolled .about-me {
   display: none;
 }
+
+@media (max-width: 768px) {
+  h1{
+    transition: 1s;
+    font-size: 2.5rem;
+  }
+}
