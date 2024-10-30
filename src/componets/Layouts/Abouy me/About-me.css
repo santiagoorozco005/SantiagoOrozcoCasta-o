@@ -68,5 +68,7 @@
     padding: 3rem 1rem;
   }
 
-
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
 }
