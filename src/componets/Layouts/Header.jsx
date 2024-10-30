@@ -1,6 +1,7 @@
 import { Navbar } from "../UI/Navbar/Navbar"
 import "./Header.css"
 
+
 export const Header = () => {
     return(
         <>
@@ -11,9 +12,7 @@ export const Header = () => {
             </div>
             <h1>SANTIAGO OROZCO CASTAÑO</h1>
 
-            
-
-            <a href="" className="botton"> </a>
+            <a href="" className="botton"><i class="fa-solid fa-angles-down"></i></a>
         </header>
         </>
     )

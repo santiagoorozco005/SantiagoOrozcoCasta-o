@@ -1,22 +1,21 @@
+
 header {
-  height: 100vh; /* 100% del alto de la ventana */
-  width: 100%; /* 100% del ancho */
+  height: 100vh; 
+  width: 100%; 
   background-image: url(../../assets/img/opaca.jpg) ;
-  background-size: cover; /* para que cubra todo el espacio */
+  background-size: cover;
   background-position: center;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+i{
+    color: #fff;
+}
 
-/* Opción 1: Usando pseudo-elemento para crear capa opaca */
-
-
-/* Opción 2: Usando background-color directamente */
 header {
-  background-color: rgba(0, 0, 0, 0.9); /* Color semi-transparente */
-  background-blend-mode: overlay; /* Mezcla el color con la imagen */
+  background-color: rgba(0, 0, 0, 0.9); 
+  background-blend-mode: overlay; 
 }
 
 header > .header-top{
