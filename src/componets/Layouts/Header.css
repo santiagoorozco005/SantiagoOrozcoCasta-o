@@ -128,9 +128,7 @@ header .botton i {
   z-index: 1000;
 }
 
-.header-scrolled > .header-top {
-  
-}
+
 
 .header-scrolled h1,
 .header-scrolled .botton,
@@ -142,7 +140,7 @@ header .botton i {
   header > h1{
     padding-bottom: 7rem;
     transition: 1s;
-    font-size: 5rem;
-    width: 100%;
+    font-size: 4rem;
+    max-width:100%;
   }
 }
