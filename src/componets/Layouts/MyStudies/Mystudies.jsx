@@ -49,7 +49,7 @@ export const Mystudies = () => {
 
         <div
           className="expertise-card"
-          data-aos="fade-up"
+          data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-delay="200"
           data-aos-mirror="true"
