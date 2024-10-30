@@ -51,7 +51,6 @@ header .botton {
     z-index: 1;
   }
   
-  /* Creamos el efecto del borde usando un pseudo-elemento */
   header .botton::before {
     content: '';
     position: absolute;
@@ -86,12 +85,10 @@ header .botton {
     }
   }
   
-  /* Opcional: Agregar efecto hover */
   header .botton:hover::before {
     animation: borderAnimation 3s linear infinite;
   }
   
-  /* Para que el ícono tenga buen contraste */
   header .botton i {
-    color: #fff; /* o el color que prefieras */
+    color: #fff; 
   }
