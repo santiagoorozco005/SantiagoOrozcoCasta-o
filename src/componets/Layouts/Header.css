@@ -136,8 +136,17 @@ header .botton i {
   display: none;
 }
 
-@media (max-width: 700px) and (max-height:600px) {
+@media (max-width: 700px){
 
+  header > h1{
+    padding-bottom: 7rem;
+    transition: 1s;
+    font-size: 4rem;
+    max-width:100%;
+  }
+}
+
+@media (max-height:600px) {
   header > h1{
     padding-bottom: 7rem;
     transition: 1s;
