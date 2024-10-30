@@ -29,7 +29,8 @@ export const Navbar = () => {
           href="#"
         >
           ¿Quien Soy?
-        </a>
+        </a> 
+        
         </ul>
         {/* <ul>
             <a
