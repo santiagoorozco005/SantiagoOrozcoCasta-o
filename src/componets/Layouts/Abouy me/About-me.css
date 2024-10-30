@@ -69,20 +69,7 @@
   }
 
   .expertise-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-height: 768px) {
-  .expertise h1 {
-    font-size: 2.5rem;
-  }
-
-  .expertise {
-    padding: 3rem 1rem;
-  }
-
-  .expertise-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 }
