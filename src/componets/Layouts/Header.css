@@ -15,7 +15,6 @@ header {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
   background-blend-mode: overlay;
-  position: relative;
 }
 
 
@@ -55,6 +54,7 @@ header > h1 {
   font-size: 7rem;
   max-width: 60%;
   text-align: center;
+  transition: 1s;
 }
 
 header > .about-me {
@@ -129,7 +129,7 @@ header .botton i {
 }
 
 .header-scrolled > .header-top {
-  padding: 0 2rem;
+  
 }
 
 .header-scrolled h1,
@@ -140,9 +140,9 @@ header .botton i {
 
 @media (max-width: 700px) {
   header > h1{
-    color: #48ff00;
+    padding-bottom: 7rem;
     transition: 1s;
-    font-size: 3.2rem;
+    font-size: 5rem;
     width: 100%;
   }
 }
