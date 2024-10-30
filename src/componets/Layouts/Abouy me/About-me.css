@@ -19,7 +19,7 @@
 .expertise-grid {
   overflow-x: hidden;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 850px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -59,16 +59,17 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 827px) {
+  .expertise-grid {
+    grid-template-columns: 1fr; 
+  }
+
   .expertise h1 {
+    color: #4a9eff;
     font-size: 2.5rem;
   }
 
   .expertise {
     padding: 3rem 1rem;
-  }
-
-  .expertise-grid {
-    grid-template-columns: 1fr;
   }
 }
