@@ -1,5 +1,5 @@
-.expertise {
-    background-color: #1a1a1a;
+.expertise-raid {
+    background-color: #1f3a4d;
     padding: 4rem 2rem;
     min-height: 90vh;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
   }
   
-  .expertise h1 {
+  .expertise-raid h1 {
     text-align: center;
     color: white;
     font-size: 3.5rem;
@@ -58,11 +58,11 @@
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
-    .expertise h1 {
+    .expertise-raid h1 {
       font-size: 2.5rem;
     }
   
-    .expertise {
+    .expertise-raid {
       padding: 3rem 1rem;
     }
   

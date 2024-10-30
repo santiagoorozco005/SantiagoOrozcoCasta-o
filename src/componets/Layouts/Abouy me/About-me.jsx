@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Computer, Atom, Smartphone } from "lucide-react";
-import "./About-me.css"
+import "./About-me.css";
 
 export const AboutMe = () => {
   useEffect(() => {
@@ -14,14 +14,14 @@ export const AboutMe = () => {
       anchorPlacement: "center-bottom",
     });
 
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       AOS.refresh();
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", () => {
-        AOS.refresh();
-      });
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -82,6 +82,7 @@ export const AboutMe = () => {
           </h3>
         </div>
       </div>
+
     </section>
   );
 };

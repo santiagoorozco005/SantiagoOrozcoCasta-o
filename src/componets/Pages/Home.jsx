@@ -1,5 +1,6 @@
 import { AboutMe } from "../Layouts/Abouy me/About-me";
 import { Header } from "../Layouts/Header";
+import { Mystudies } from "../Layouts/MyStudies/Mystudies";
 
 
 export const Home = () => {
@@ -8,6 +9,8 @@ export const Home = () => {
         <Header />
         
         <AboutMe />
+
+        <Mystudies/>
         </>
     );
 };

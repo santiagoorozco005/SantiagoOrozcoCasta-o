@@ -1,67 +1,90 @@
+.header-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
 
 header {
-  height: 100vh; 
-  width: 100%; 
-  background-image: url(../../assets/img/opaca.jpg) ;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../assets/img/opaca.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-i{
-    color: #fff;
-}
-
-header {
-  background-color: rgba(0, 0, 0, 0.9); 
-  background-blend-mode: overlay; 
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: overlay;
+  position: relative;
 }
 
-header > .header-top{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+
+.header-scrolled {
+  height: auto !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  padding: 1rem 0;
+  z-index: 1000;
 }
 
-header > .header-top > h3{
-    color: #20d1d8;
+
+
+
+.expertise {
+  margin-top: 2rem; 
 }
 
-header > h1{
-    font-size: 7rem;
-    width: 60%;
-    text-align: center;
+i {
+  color: #fff;
 }
 
-header > .about-me{
-    width: 45%;
-    height: max-content;
-    color: #7fe3cb;
-    font-size: 1.5rem;
+header > .header-top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header > .header-top > h3 {
+  color: #20d1d8;
+}
+
+header > h1 {
+  font-size: 7rem;
+  width: 60%;
+  text-align: center;
+}
+
+header > .about-me {
+  width: 45%;
+  height: max-content;
+  color: #7fe3cb;
+  font-size: 1.5rem;
 }
 
 header .botton {
-    position: relative;
-    padding: 1rem;
-    border-radius: 1rem;
-    text-decoration: none;
-    display: inline-block;
-    background: transparent;
-    z-index: 1;
-  }
-  
-  header .botton::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    z-index: -1;
-    border-radius: 1rem;
-    background: linear-gradient(
-      90deg, 
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  background: transparent;
+  z-index: 1;
+}
+
+header .botton::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  border-radius: 1rem;
+  background: linear-gradient(
+      90deg,
       #ff0000,
       #ff7300,
       #fffb00,
@@ -71,24 +94,46 @@ header .botton {
       #7a00ff,
       #ff00c8,
       #ff0000
-    );
-    background-size: 400%;
-    animation: borderAnimation 20s linear infinite;
-  }
-  
-  @keyframes borderAnimation {
-    0% {
+  );
+  background-size: 400%;
+  animation: borderAnimation 20s linear infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
       background-position: 0%;
-    }
-    100% {
+  }
+  100% {
       background-position: 400%;
-    }
   }
-  
-  header .botton:hover::before {
-    animation: borderAnimation 3s linear infinite;
-  }
-  
-  header .botton i {
-    color: #fff; 
-  }
+}
+
+header .botton:hover::before {
+  animation: borderAnimation 3s linear infinite;
+}
+
+header .botton i {
+  color: #fff;
+}
+
+
+.header-scrolled {
+  height: auto !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+.header-scrolled > .header-top {
+  padding: 0 2rem;
+}
+
+.header-scrolled h1,
+.header-scrolled .botton,
+.header-scrolled .about-me {
+  display: none;
+}

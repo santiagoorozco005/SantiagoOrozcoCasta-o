@@ -1,9 +1,25 @@
 import "./Itemnavbar.css"
 
 export const Itemnavbar = ({link,text}) => {
-    return( 
-        <ul>
-            <a href={link}>{text}</a>
+
+    const scrollToAbout = () => {
+        const aboutSection = document.querySelector(".expertise-raid");
+        if (aboutSection) {
+          aboutSection.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+        return( 
+            <ul>
+            <a
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToAbout();
+          }}
+          href="#"
+        >
+          {text}
+        </a>
         </ul>
     )
 }
