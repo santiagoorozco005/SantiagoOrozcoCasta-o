@@ -1,5 +1,5 @@
 import { Itemnavbar } from "../Itemnavbar/Itemnavbar"
-
+import "./Navbar.css"
 
 
 export const Navbar = () => {

@@ -1,9 +1,9 @@
-
+import "./Itemnavbar.css"
 
 export const Itemnavbar = ({link,text}) => {
     return( 
         <ul>
-            <li><a href={link}>{text}</a></li>
+            <a href={link}>{text}</a>
         </ul>
     )
 }
