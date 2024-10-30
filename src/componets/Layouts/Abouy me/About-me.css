@@ -1,10 +1,11 @@
 .expertise {
     background-color: #1a1a1a;
-    padding: 4rem 2rem;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 0;
+    margin-left: 0;
   }
   
   .expertise h1 {
@@ -17,11 +18,11 @@
   
   .expertise-grid {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
   }
   
   .expertise-card {
@@ -62,11 +63,5 @@
       font-size: 2.5rem;
     }
   
-    .expertise {
-      padding: 3rem 1rem;
-    }
-  
-    .expertise-grid {
-      grid-template-columns: 1fr;
-    }
+
   }

@@ -1,3 +1,10 @@
 nav{
     display: flex;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin-left: 0;
 }

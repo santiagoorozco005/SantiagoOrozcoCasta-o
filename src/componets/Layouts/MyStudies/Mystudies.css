@@ -1,10 +1,11 @@
 .expertise-raid {
     background-color: #1f3a4d;
-    padding: 4rem 2rem;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 0;
+    margin-left: 0;
   }
   
   .expertise-raid h1 {
@@ -17,16 +18,14 @@
   
   .expertise-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+
   }
   
   .expertise-card {
     background-color: #252525;
-    padding: 2rem;
     border-radius: 10px;
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
