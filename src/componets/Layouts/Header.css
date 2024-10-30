@@ -1,8 +1,22 @@
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+header {
+  height: 100vh; /* 100% del alto de la ventana */
+  width: 100%; /* 100% del ancho */
+  background-image: url(../../assets/img/opaca.jpg) ;
+  background-size: cover; /* para que cubra todo el espacio */
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Opción 1: Usando pseudo-elemento para crear capa opaca */
+
+
+/* Opción 2: Usando background-color directamente */
+header {
+  background-color: rgba(0, 0, 0, 0.9); /* Color semi-transparente */
+  background-blend-mode: overlay; /* Mezcla el color con la imagen */
 }
 
 header > .header-top{
@@ -19,4 +33,17 @@ header > h1{
     font-size: 7rem;
     width: 60%;
     text-align: center;
+}
+
+header > .about-me{
+    width: 45%;
+    height: max-content;
+    color: #7fe3cb;
+    font-size: 1.5rem;
+}
+
+header > .botton{
+    padding: 1rem;
+    border: 2px solid red;
+    border-radius: 1rem;
 }
