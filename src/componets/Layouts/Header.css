@@ -6,7 +6,7 @@
 
 header {
   height: 100vh;
-  max-width: 100%;
+  max-width: 100vh;
   background-image: url(../../assets/img/opaca.jpg);
   background-size: cover;
   background-position: center;
