@@ -138,10 +138,10 @@ header .botton i {
   display: none;
 }
 
-@media (max-width: 500px) {
-  h1{
-    color: #ff0000;
+@media (max-width: 700px) {
+  header > h1{
     transition: 1s;
     font-size: 1rem;
+    width: 100%;
   }
 }
