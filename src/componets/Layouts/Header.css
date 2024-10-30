@@ -25,7 +25,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.9) !important;
+background: black;
   padding: 1rem 0;
   z-index: 1000;
 }
