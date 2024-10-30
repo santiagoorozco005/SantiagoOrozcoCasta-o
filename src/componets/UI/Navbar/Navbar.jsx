@@ -31,17 +31,7 @@ export const Navbar = () => {
           ¿Quien Soy?
         </a>
         </ul>
-        <ul>
-            <a
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToAbout();
-          }}
-          href="#"
-        >
-          Mi Familia
-        </a>
-        </ul>
+        
         <ul>
             <a
           onClick={(e) => {
