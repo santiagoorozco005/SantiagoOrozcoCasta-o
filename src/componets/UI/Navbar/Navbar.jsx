@@ -3,57 +3,86 @@ import "./Navbar.css"
 
 
 export const Navbar = () => {
-    const scrollToAbout = () => {
-        const aboutSection = document.querySelector(".expertise");
-        if (aboutSection) {
-          aboutSection.scrollIntoView({ behavior: "smooth" });
+    const scrollToSection = (sectionClass) => {
+        const section = document.querySelector(sectionClass);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
         }
     };
 
-    const studies = () => {
-        const study = document.querySelector(".expertise-raid");
-        if (study) {
-            study.scrollIntoView({ behavior: "smooth" });
-        }
-        }
-    
-
-        return( 
-            <>
-            <ul>
-            <a
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToAbout();
-          }}
-          href="#"
-        >
-          ¿Quien Soy?
-        </a> 
-        
-        </ul>
-        {/* <ul>
-            <a
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToAbout();
-          }}
-          href="#"
-        >
-          Mi Familia
-        </a>
-        </ul> */}
+    return( 
+        <>
         <ul>
             <a
-          onClick={(e) => {
-            e.preventDefault();
-            studies();
-          }}
-          href="#"
-        >
-          Mis Estudios
-        </a>
+                onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(".quien-soy");
+                }}
+                href="#"
+            >
+                ¿Quién Soy?
+            </a> 
         </ul>
-            </>
+        
+        <ul>
+            <a
+                onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(".expertise");
+                }}
+                href="#"
+            >
+                Experiencia
+            </a>
+        </ul>
+
+        <ul>
+            <a
+                onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(".expertise-raid");
+                }}
+                href="#"
+            >
+                Estudios
+            </a>
+        </ul>
+
+        <ul>
+            <a
+                onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(".proyectos");
+                }}
+                href="#"
+            >
+                Proyectos
+            </a>
+        </ul>
+
+        <ul>
+            <a
+                onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(".tecnologias");
+                }}
+                href="#"
+            >
+                Tecnologías
+            </a>
+        </ul>
+
+        <ul>
+            <a
+                onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(".contacto");
+                }}
+                href="#"
+            >
+                Contacto
+            </a>
+        </ul>
+        </>
     )
 }
