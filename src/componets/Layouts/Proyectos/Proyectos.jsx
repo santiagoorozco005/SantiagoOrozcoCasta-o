@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ExternalLink, Github, Code, Smartphone, Globe } from "lucide-react";
 import "./Proyectos.css";
+import "../../../IMG/image.png";
 
 export const Proyectos = () => {
   useEffect(() => {
@@ -29,46 +30,35 @@ export const Proyectos = () => {
   const proyectos = [
     {
       id: 1,
-      titulo: "[Nombre del Proyecto 1]",
-      descripcion: "[Descripción detallada del proyecto, tecnologías utilizadas, problemas resueltos, etc.]",
-      tecnologias: ["React", "Node.js", "MongoDB", "CSS"],
-      imagen: "/api/placeholder/400/250",
-      enlaceDemo: "#",
-      enlaceGithub: "#",
+      titulo: "EventHub",
+      descripcion: "Eventhub es una plataforma web que facilita la creación, gestión y descubrimiento de eventos. Con una interfaz intuitiva y colores amigables, ofrece una experiencia fluida para organizadores y asistentes, permitiendo conectar personas, compartir experiencias y vivir los eventos de una forma moderna y sencilla.",
+      tecnologias: ["React", "Node.js", "MongoDB", "CSS","JavaScript", "Java", "Spring Boot"],
+      imagen: "../../../IMG/image.png",
+      enlaceDemo: "https://event-eao8znvce-olisaurios-projects.vercel.app/",
+      enlaceGithub: "https://github.com/santiagoorozco005/Event-Hub.git",
       categoria: "web",
       estado: "Completado"
     },
     {
       id: 2,
-      titulo: "[Nombre del Proyecto 2]",
-      descripcion: "[Descripción detallada del proyecto, tecnologías utilizadas, problemas resueltos, etc.]",
-      tecnologias: ["JavaScript", "HTML", "CSS", "API"],
+      titulo: "Bootcamp Analisis de Datos",
+      descripcion: "Bootcasmp Análisis de Datos es un proyecto colaborativo desarrollado durante un curso intensivo de formación en análisis de datos. El objetivo principal del proyecto fue aplicar técnicas y herramientas de análisis de datos para extraer información valiosa y generar insights a partir de conjuntos de datos complejos. El proyecto abarcó desde la recopilación y limpieza de datos hasta el análisis exploratorio, la visualización y la interpretación de resultados, utilizando lenguajes y bibliotecas como Python, Pandas, NumPy y Matplotlib.",
+      tecnologias: ["Python", "Pandas", "NumPy", "Matplotlib"],
       imagen: "/api/placeholder/400/250",
-      enlaceDemo: "#",
-      enlaceGithub: "#",
+      enlaceDemo: "https://github.com/santiagoorozco005/Grupo-2-Analisis-De-Datos-BOOTCAMP.git",
+      enlaceGithub: "https://github.com/santiagoorozco005/Grupo-2-Analisis-De-Datos-BOOTCAMP.git",
       categoria: "web",
       estado: "En desarrollo"
     },
     {
       id: 3,
-      titulo: "[Nombre del Proyecto 3]",
-      descripcion: "[Descripción detallada del proyecto, tecnologías utilizadas, problemas resueltos, etc.]",
-      tecnologias: ["React Native", "Firebase", "JavaScript"],
+      titulo: "Exclusive Wear",
+      descripcion: "Exclusive Wear es una tienda virtual funcional especializada en la venta de zapatos. Permite a los usuarios explorar un catálogo de productos, visualizar detalles como precios, tallas y estilos, y realizar compras de forma rápida y segura. Su diseño está enfocado en ofrecer una experiencia moderna, intuitiva y accesible, facilitando la búsqueda y adquisición del calzado ideal desde cualquier dispositivo.",
+      tecnologias: ["PHP", "JavaScript", "CSS", "MySQL"],
       imagen: "/api/placeholder/400/250",
-      enlaceDemo: "#",
-      enlaceGithub: "#",
-      categoria: "mobile",
-      estado: "Completado"
-    },
-    {
-      id: 4,
-      titulo: "[Nombre del Proyecto 4]",
-      descripcion: "[Descripción detallada del proyecto, tecnologías utilizadas, problemas resueltos, etc.]",
-      tecnologias: ["Python", "Django", "PostgreSQL"],
-      imagen: "/api/placeholder/400/250",
-      enlaceDemo: "#",
-      enlaceGithub: "#",
-      categoria: "backend",
+      enlaceDemo: "https://github.com/santiagoorozco005/Exclusive-Wear.git",
+      enlaceGithub: "https://github.com/santiagoorozco005/Exclusive-Wear.git",
+      categoria: "web",
       estado: "Completado"
     }
   ];

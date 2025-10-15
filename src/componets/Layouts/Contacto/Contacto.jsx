@@ -67,14 +67,14 @@ export const Contacto = () => {
     {
       icono: <Mail size={24} />,
       titulo: "Email",
-      valor: "[tu-email@ejemplo.com]",
+      valor: "santioro1736gmail.com",
       enlace: "mailto:[tu-email@ejemplo.com]"
     },
     {
       icono: <Phone size={24} />,
       titulo: "Teléfono",
-      valor: "[+57 XXX XXX XXXX]",
-      enlace: "tel:[+57XXXXXXXXXX]"
+      valor: "+57 302 232 7957",
+      enlace: "https://wa.me/+573022327957"
     },
     {
       icono: <MapPin size={24} />,
@@ -128,7 +128,7 @@ export const Contacto = () => {
                 </div>
                 <div className="info-content">
                   <h3>{item.titulo}</h3>
-                  <a href={item.enlace} className="info-valor">
+                  <a href={item.enlace} target="_blank" rel="noopener noreferrer" className="info-valor">
                     {item.valor}
                   </a>
                 </div>

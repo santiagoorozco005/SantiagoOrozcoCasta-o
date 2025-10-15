@@ -56,10 +56,7 @@ export const QuienSoy = () => {
 
           <div className="description">
             <p>
-              [Aquí puedes escribir una descripción personal sobre ti, tus 
-              intereses, tu pasión por la programación, tus objetivos 
-              profesionales, etc. Por ejemplo: "Soy un desarrollador apasionado 
-              por crear soluciones tecnológicas innovadoras..."]
+              Tecnólogo en formación en Análisis y Desarrollo de Software con una fuerte especialización en el desarrollo web frontend. Mi pasión es construir aplicaciones web intuitivas y eficientes, utilizando tecnologías como React, JavaScript, HTML y CSS, e integrándolas con backends robustos en Spring Boot y diversas bases de datos. Me defino por mi capacidad de aprendizaje continuo, un enfoque claro en la obtención de resultados y una gran habilidad para el trabajo colaborativo en entornos ágiles (Scrum). Mi objetivo principal es aportar soluciones digitales innovadoras que no solo cumplan con los requisitos técnicos, sino que también generen valor y crecimiento para las organizaciones.
             </p>
           </div>
         </div>
@@ -76,8 +73,7 @@ export const QuienSoy = () => {
             </div>
             <h3>Pasiones</h3>
             <p>
-              [Describe tus pasiones: programación, tecnología, aprendizaje 
-              continuo, resolver problemas, crear aplicaciones, etc.]
+              Me apasiona la resolución de problemas complejos a través del código, el aprendizaje constante de nuevas tecnologías y la creación de interfaces de usuario que sean tanto funcionales como estéticamente agradables. Disfruto trabajando en equipo para llevar ideas desde el concepto hasta un producto final pulido.
             </p>
           </div>
 
@@ -92,9 +88,7 @@ export const QuienSoy = () => {
             </div>
             <h3>Objetivos</h3>
             <p>
-              [Describe tus objetivos profesionales: convertirte en un 
-              desarrollador senior, especializarte en ciertas tecnologías, 
-              crear tu propia empresa, etc.]
+              Busco consolidarme como un desarrollador frontend de referencia, profundizando mis conocimientos en arquitecturas de software modernas y liderando proyectos de alto impacto. A largo plazo, aspiro a contribuir en el desarrollo de productos tecnológicos que mejoren la vida de las personas.
             </p>
           </div>
         </div>
@@ -107,7 +101,7 @@ export const QuienSoy = () => {
           data-aos-duration="1000"
           data-aos-delay="600"
         >
-          <h3>[X]</h3>
+          <h3>+2</h3>
           <p>Años de Experiencia</p>
         </div>
         <div
@@ -116,7 +110,7 @@ export const QuienSoy = () => {
           data-aos-duration="1000"
           data-aos-delay="700"
         >
-          <h3>[X]</h3>
+          <h3>4</h3>
           <p>Proyectos Completados</p>
         </div>
         <div
@@ -125,7 +119,7 @@ export const QuienSoy = () => {
           data-aos-duration="1000"
           data-aos-delay="800"
         >
-          <h3>[X]</h3>
+          <h3>+10</h3>
           <p>Tecnologías Dominadas</p>
         </div>
       </div>
